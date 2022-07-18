@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import Web3 from 'web3'
 import './App.css';
 import Marketplace from '../abis/Marketplace.json'
@@ -25,7 +27,7 @@ class App extends Component {
       window.web3 = new Web3(window.web3.currentProvider)
     }
     else {
-      window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+      window.alert('Non-Ethereum browser detected. Please use Chrome with MetaMask!')
       return false
     }
     return true
@@ -63,8 +65,7 @@ class App extends Component {
       this.setState({ loading: false})
     } else {
       this.setState({ metamask: false })
-      window.alert('Marketplace contract not deployed to detected network.')
-      
+      window.alert('Marketplace contract not deployed to detected network.  Check if Ropsten TEST is setup in MetaMask')      
     }
   }
 
@@ -119,25 +120,45 @@ class App extends Component {
               { this.state.metamask
                 ? <div id="loader" className="text-center"><p className="text-center">..MetaMask....</p></div>
                 : <div id="metainst" className="text-left">
-                    <p className="text-left">No MetaMask wallet detected... this is a pre-req and mostly safe</p>
-                    <a
-                      className="navbar-brand col-sm-3 col-md-2 mr-0"
-                      href="https://www.geeksforgeeks.org/how-to-install-and-use-metamask-on-google-chrome/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >Click here for instructions on installing MetaMask</a>
-                    <div id="metaimg" className="text-left">
-                    <a
-                      className="navbar-brand col-sm-3 col-md-2 mr-0"
-                      href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ja"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                        <img
-                          src="https://media.geeksforgeeks.org/wp-content/uploads/20210616074219/metamask.PNG"
-                          alt="car"
-                        />
-                      </a>
-                    </div>
+                   <Card>
+                    <Card.Header>Setup Step 1 - MetaMask</Card.Header>
+                    <Card.Body>
+                      <Card.Title>MetaMask Browser Crypto Wallet</Card.Title>
+                      <Card.Text>
+                        Use Chrome and install MetaMask extension into your browser.
+                        <a
+                          className="navbar-brand col-sm-3 col-md-2 mr-0"
+                          href="https://www.geeksforgeeks.org/how-to-install-and-use-metamask-on-google-chrome/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >Detailed instructions on installing MetaMask</a>
+                      </Card.Text>
+                      <Button href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ja"
+                       variant="primary">Install from Chrome Store</Button>
+                    </Card.Body>
+                   </Card>
+                   <p>&nbsp;</p>
+                   <Card>
+                    <Card.Header>Setup Step 2 - Switch to Ropsten Test Network</Card.Header>
+                    <Card.Body>
+                      <Card.Title>Switch the Test Ropsten network</Card.Title>
+                      <Card.Text>
+                        After installing and logging into MetaMask, you will need to show Test networks and choose Ropsten Test
+                      </Card.Text>
+                    </Card.Body>
+                   </Card>
+                   <p>&nbsp;</p>
+                   <Card>
+                    <Card.Header>Setup Step 3 - Get free Ropsten Test ETHER</Card.Header>
+                    <Card.Body>
+                      <Card.Title>You will need 1 ETH token to start</Card.Title>
+                      <Card.Text>
+                        In order to do transact, you will need a little ETH on the Test Net to pay for "gas" transaction fees.  Enter your MetaMask Account code
+                      </Card.Text>
+                      <Button href="https://faucet.egorfine.com/"
+                       variant="primary">Get Free Test ETH</Button>
+                    </Card.Body>
+                   </Card>
                   </div>
               }
             </main>

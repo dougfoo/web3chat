@@ -125,13 +125,12 @@ class App extends Component {
                     <Card.Body>
                       <Card.Title>MetaMask Browser Crypto Wallet</Card.Title>
                       <Card.Text>
-                        Use Chrome and install MetaMask extension into your browser.
+                        Use Chrome and install MetaMask extension into your browser.  
                         <a
-                          className="navbar-brand col-sm-3 col-md-2 mr-0"
                           href="https://www.geeksforgeeks.org/how-to-install-and-use-metamask-on-google-chrome/"
                           target="_blank"
                           rel="noopener noreferrer"
-                        >Detailed instructions on installing MetaMask</a>
+                        > Detailed instructions on installing MetaMask</a>
                       </Card.Text>
                       <Button href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ja"
                        variant="primary">Install from Chrome Store</Button>

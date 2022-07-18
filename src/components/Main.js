@@ -5,7 +5,7 @@ class Main extends Component {
   render() {
     return (
       <div id="content">
-        <h1>Add Product</h1>
+        <h1>Add Message</h1>
         <form onSubmit={(event) => {
           event.preventDefault()
           const name = this.productName.value
@@ -18,7 +18,7 @@ class Main extends Component {
               type="text"
               ref={(input) => { this.productName = input }}
               className="form-control"
-              placeholder="Product Name"
+              placeholder="Message"
               required />
           </div>
           <div className="form-group mr-sm-2">
@@ -27,20 +27,20 @@ class Main extends Component {
               type="text"
               ref={(input) => { this.productPrice = input }}
               className="form-control"
-              placeholder="Product Price"
+              placeholder="Price"
               required />
           </div>
-          <button type="submit" className="btn btn-primary">Add Product</button>
+          <button type="submit" className="btn btn-primary">Add Message</button>
         </form>
         <p>&nbsp;</p>
-        <h2>Buy Product</h2>
+        <h2>Like Message</h2>
         <table className="table">
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Name</th>
+              <th scope="col">Message</th>
               <th scope="col">Price</th>
-              <th scope="col">Owner</th>
+              <th scope="col">Liker</th>
               <th scope="col"></th>
             </tr>
           </thead>

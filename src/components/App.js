@@ -118,7 +118,27 @@ class App extends Component {
             <main role="main" className="col-lg-12 d-flex">
               { this.state.metamask
                 ? <div id="loader" className="text-center"><p className="text-center">..MetaMask....</p></div>
-                : <p className="text-center">No MetaMask Installed Add instructions here</p>
+                : <div id="metainst" className="text-left">
+                    <p className="text-left">No MetaMask wallet detected... this is a pre-req and mostly safe</p>
+                    <a
+                      className="navbar-brand col-sm-3 col-md-2 mr-0"
+                      href="https://www.geeksforgeeks.org/how-to-install-and-use-metamask-on-google-chrome/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Click here for instructions on installing MetaMask</a>
+                    <div id="metaimg" className="text-left">
+                    <a
+                      className="navbar-brand col-sm-3 col-md-2 mr-0"
+                      href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ja"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                        <img
+                          src="https://media.geeksforgeeks.org/wp-content/uploads/20210616074219/metamask.PNG"
+                          alt="car"
+                        />
+                      </a>
+                    </div>
+                  </div>
               }
             </main>
           </div>

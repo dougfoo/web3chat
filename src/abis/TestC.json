@@ -1,0 +1,1155 @@
+{
+  "contractName": "TestC",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "testfCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x355f3268"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "testf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xf39581ad"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "testfs",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "testf",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xf6b4a5bf"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "signature": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_testf",
+          "type": "string"
+        }
+      ],
+      "name": "createTest",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xc0c442d0"
+    }
+  ],
+  "bytecode": "0x6080604052600060015534801561001557600080fd5b506040805190810160405280601981526020017f666f6f737461636b2077656233204d61726b6574706c6163650000000000000081525060009080519060200190610061929190610067565b5061010c565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a857805160ff19168380011785556100d6565b828001600101855582156100d6579182015b828111156100d55782518255916020019190600101906100ba565b5b5090506100e391906100e7565b5090565b61010991905b808211156101055760008160009055506001016100ed565b5090565b90565b6105418061011b6000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063355f326814610067578063c0c442d014610092578063f39581ad1461015a578063f6b4a5bf146101ea575b600080fd5b34801561007357600080fd5b5061007c6102a5565b6040518082815260200191505060405180910390f35b34801561009e57600080fd5b50610158600480360360208110156100b557600080fd5b81019080803590602001906401000000008111156100d257600080fd5b8201836020820111156100e457600080fd5b8035906020019184600183028401116401000000008311171561010657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102ab565b005b34801561016657600080fd5b5061016f610316565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101af578082015181840152602081019050610194565b50505050905090810190601f1680156101dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156101f657600080fd5b506102236004803603602081101561020d57600080fd5b81019080803590602001909291905050506103b4565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561026957808201518184015260208101905061024e565b50505050905090810190601f1680156102965780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60015481565b600160008154809291906001019190505550604080519081016040528060015481526020018281525060026000600154815260200190815260200160002060008201518160000155602082015181600101908051906020019061030f929190610470565b5090505050565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103ac5780601f10610381576101008083540402835291602001916103ac565b820191906000526020600020905b81548152906001019060200180831161038f57829003601f168201915b505050505081565b6002602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104665780601f1061043b57610100808354040283529160200191610466565b820191906000526020600020905b81548152906001019060200180831161044957829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104b157805160ff19168380011785556104df565b828001600101855582156104df579182015b828111156104de5782518255916020019190600101906104c3565b5b5090506104ec91906104f0565b5090565b61051291905b8082111561050e5760008160009055506001016104f6565b5090565b9056fea165627a7a72305820b0ba0c40fc3da9c88d1f0cc2051ad31ba5c9e3fb48379264d56c32c92deec1450029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063355f326814610067578063c0c442d014610092578063f39581ad1461015a578063f6b4a5bf146101ea575b600080fd5b34801561007357600080fd5b5061007c6102a5565b6040518082815260200191505060405180910390f35b34801561009e57600080fd5b50610158600480360360208110156100b557600080fd5b81019080803590602001906401000000008111156100d257600080fd5b8201836020820111156100e457600080fd5b8035906020019184600183028401116401000000008311171561010657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102ab565b005b34801561016657600080fd5b5061016f610316565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101af578082015181840152602081019050610194565b50505050905090810190601f1680156101dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156101f657600080fd5b506102236004803603602081101561020d57600080fd5b81019080803590602001909291905050506103b4565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561026957808201518184015260208101905061024e565b50505050905090810190601f1680156102965780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60015481565b600160008154809291906001019190505550604080519081016040528060015481526020018281525060026000600154815260200190815260200160002060008201518160000155602082015181600101908051906020019061030f929190610470565b5090505050565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103ac5780601f10610381576101008083540402835291602001916103ac565b820191906000526020600020905b81548152906001019060200180831161038f57829003601f168201915b505050505081565b6002602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104665780601f1061043b57610100808354040283529160200191610466565b820191906000526020600020905b81548152906001019060200180831161044957829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104b157805160ff19168380011785556104df565b828001600101855582156104df579182015b828111156104de5782518255916020019190600101906104c3565b5b5090506104ec91906104f0565b5090565b61051291905b8082111561050e5760008160009055506001016104f6565b5090565b9056fea165627a7a72305820b0ba0c40fc3da9c88d1f0cc2051ad31ba5c9e3fb48379264d56c32c92deec1450029",
+  "sourceMap": "27:490:3:-;;;100:1;75:26;;226:75;8:9:-1;5:2;;;30:1;27;20:12;5:2;226:75:3;258:35;;;;;;;;;;;;;;;;;;:5;:35;;;;;;;;;;;;:::i;:::-;;27:490;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:490:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;75:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:26:3;;;;;;;;;;;;;;;;;;;;;;;309:205;;8:9:-1;5:2;;;30:1;27;20:12;5:2;309:205:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;309:205:3;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;309:205:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;309:205:3;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;309:205:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;309:205:3;;;;;;;;;;;;;;;;;;49:19;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:19:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;49:19:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;108:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;108:36:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;108:36:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;108:36:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;75:26;;;;:::o;309:205::-;405:10;;:13;;;;;;;;;;;;;481:25;;;;;;;;;487:10;;481:25;;;;499:6;481:25;;;460:6;:18;467:10;;460:18;;;;;;;;;;;:46;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;309:205;:::o;49:19::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;108:36::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;27:490::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract TestC {\r\n    string public testf;\r\n    uint public testfCount = 0;\r\n    mapping(uint => TestF) public testfs;\r\n\r\n    struct TestF {\r\n        uint id;\r\n        string testf;\r\n    }\r\n\r\n \r\n    constructor() public {\r\n        testf = \"foostack web3 Marketplace\";\r\n    }\r\n\r\n    function createTest(string memory _testf) public {\r\n        // Require a valid message\r\n        testfCount ++;\r\n        // Create the Message\r\n        testfs[testfCount] = TestF(testfCount, _testf);\r\n    }\r\n}",
+  "sourcePath": "C:/Users/dougc/git/web3chat/src/contracts/TestC.sol",
+  "ast": {
+    "absolutePath": "/C/Users/dougc/git/web3chat/src/contracts/TestC.sol",
+    "exportedSymbols": {
+      "TestC": [
+        426
+      ]
+    },
+    "id": 427,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 385,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 426,
+        "linearizedBaseContracts": [
+          426
+        ],
+        "name": "TestC",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 387,
+            "name": "testf",
+            "nodeType": "VariableDeclaration",
+            "scope": 426,
+            "src": "49:19:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 386,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "49:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 390,
+            "name": "testfCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 426,
+            "src": "75:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 388,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "75:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 389,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "100:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 394,
+            "name": "testfs",
+            "nodeType": "VariableDeclaration",
+            "scope": 426,
+            "src": "108:36:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_TestF_$399_storage_$",
+              "typeString": "mapping(uint256 => struct TestC.TestF)"
+            },
+            "typeName": {
+              "id": 393,
+              "keyType": {
+                "id": 391,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "116:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "108:22:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_TestF_$399_storage_$",
+                "typeString": "mapping(uint256 => struct TestC.TestF)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 392,
+                "name": "TestF",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 399,
+                "src": "124:5:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_TestF_$399_storage_ptr",
+                  "typeString": "struct TestC.TestF"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TestC.TestF",
+            "id": 399,
+            "members": [
+              {
+                "constant": false,
+                "id": 396,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 399,
+                "src": "177:7:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 395,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "177:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 398,
+                "name": "testf",
+                "nodeType": "VariableDeclaration",
+                "scope": 399,
+                "src": "195:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 397,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "TestF",
+            "nodeType": "StructDefinition",
+            "scope": 426,
+            "src": "153:62:3",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 406,
+              "nodeType": "Block",
+              "src": "247:54:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 404,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 402,
+                      "name": "testf",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 387,
+                      "src": "258:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "666f6f737461636b2077656233204d61726b6574706c616365",
+                      "id": 403,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "266:27:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_1ddbc621a9db362dcffe95be062c43118425ea1a39a1aa1521d53bf3b1563572",
+                        "typeString": "literal_string \"foostack web3 Marketplace\""
+                      },
+                      "value": "foostack web3 Marketplace"
+                    },
+                    "src": "258:35:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 405,
+                  "nodeType": "ExpressionStatement",
+                  "src": "258:35:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 407,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 400,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "237:2:3"
+            },
+            "returnParameters": {
+              "id": 401,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "247:0:3"
+            },
+            "scope": 426,
+            "src": "226:75:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 424,
+              "nodeType": "Block",
+              "src": "358:156:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 413,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "405:13:3",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 412,
+                      "name": "testfCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 390,
+                      "src": "405:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 414,
+                  "nodeType": "ExpressionStatement",
+                  "src": "405:13:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 415,
+                        "name": "testfs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 394,
+                        "src": "460:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_TestF_$399_storage_$",
+                          "typeString": "mapping(uint256 => struct TestC.TestF storage ref)"
+                        }
+                      },
+                      "id": 417,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 416,
+                        "name": "testfCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 390,
+                        "src": "467:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "460:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TestF_$399_storage",
+                        "typeString": "struct TestC.TestF storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 419,
+                          "name": "testfCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 390,
+                          "src": "487:10:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 420,
+                          "name": "_testf",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 409,
+                          "src": "499:6:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 418,
+                        "name": "TestF",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 399,
+                        "src": "481:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_TestF_$399_storage_ptr_$",
+                          "typeString": "type(struct TestC.TestF storage pointer)"
+                        }
+                      },
+                      "id": 421,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "481:25:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TestF_$399_memory",
+                        "typeString": "struct TestC.TestF memory"
+                      }
+                    },
+                    "src": "460:46:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TestF_$399_storage",
+                      "typeString": "struct TestC.TestF storage ref"
+                    }
+                  },
+                  "id": 423,
+                  "nodeType": "ExpressionStatement",
+                  "src": "460:46:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createTest",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 409,
+                  "name": "_testf",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 425,
+                  "src": "329:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 408,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "328:22:3"
+            },
+            "returnParameters": {
+              "id": 411,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "358:0:3"
+            },
+            "scope": 426,
+            "src": "309:205:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 427,
+        "src": "27:490:3"
+      }
+    ],
+    "src": "0:517:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/dougc/git/web3chat/src/contracts/TestC.sol",
+    "exportedSymbols": {
+      "TestC": [
+        426
+      ]
+    },
+    "id": 427,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 385,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 426,
+        "linearizedBaseContracts": [
+          426
+        ],
+        "name": "TestC",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 387,
+            "name": "testf",
+            "nodeType": "VariableDeclaration",
+            "scope": 426,
+            "src": "49:19:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 386,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "49:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 390,
+            "name": "testfCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 426,
+            "src": "75:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 388,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "75:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 389,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "100:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 394,
+            "name": "testfs",
+            "nodeType": "VariableDeclaration",
+            "scope": 426,
+            "src": "108:36:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_TestF_$399_storage_$",
+              "typeString": "mapping(uint256 => struct TestC.TestF)"
+            },
+            "typeName": {
+              "id": 393,
+              "keyType": {
+                "id": 391,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "116:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "108:22:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_TestF_$399_storage_$",
+                "typeString": "mapping(uint256 => struct TestC.TestF)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 392,
+                "name": "TestF",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 399,
+                "src": "124:5:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_TestF_$399_storage_ptr",
+                  "typeString": "struct TestC.TestF"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TestC.TestF",
+            "id": 399,
+            "members": [
+              {
+                "constant": false,
+                "id": 396,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 399,
+                "src": "177:7:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 395,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "177:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 398,
+                "name": "testf",
+                "nodeType": "VariableDeclaration",
+                "scope": 399,
+                "src": "195:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 397,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "TestF",
+            "nodeType": "StructDefinition",
+            "scope": 426,
+            "src": "153:62:3",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 406,
+              "nodeType": "Block",
+              "src": "247:54:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 404,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 402,
+                      "name": "testf",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 387,
+                      "src": "258:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "666f6f737461636b2077656233204d61726b6574706c616365",
+                      "id": 403,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "266:27:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_1ddbc621a9db362dcffe95be062c43118425ea1a39a1aa1521d53bf3b1563572",
+                        "typeString": "literal_string \"foostack web3 Marketplace\""
+                      },
+                      "value": "foostack web3 Marketplace"
+                    },
+                    "src": "258:35:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 405,
+                  "nodeType": "ExpressionStatement",
+                  "src": "258:35:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 407,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 400,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "237:2:3"
+            },
+            "returnParameters": {
+              "id": 401,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "247:0:3"
+            },
+            "scope": 426,
+            "src": "226:75:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 424,
+              "nodeType": "Block",
+              "src": "358:156:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 413,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "405:13:3",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 412,
+                      "name": "testfCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 390,
+                      "src": "405:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 414,
+                  "nodeType": "ExpressionStatement",
+                  "src": "405:13:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 415,
+                        "name": "testfs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 394,
+                        "src": "460:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_TestF_$399_storage_$",
+                          "typeString": "mapping(uint256 => struct TestC.TestF storage ref)"
+                        }
+                      },
+                      "id": 417,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 416,
+                        "name": "testfCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 390,
+                        "src": "467:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "460:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TestF_$399_storage",
+                        "typeString": "struct TestC.TestF storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 419,
+                          "name": "testfCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 390,
+                          "src": "487:10:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 420,
+                          "name": "_testf",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 409,
+                          "src": "499:6:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 418,
+                        "name": "TestF",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 399,
+                        "src": "481:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_TestF_$399_storage_ptr_$",
+                          "typeString": "type(struct TestC.TestF storage pointer)"
+                        }
+                      },
+                      "id": 421,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "481:25:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TestF_$399_memory",
+                        "typeString": "struct TestC.TestF memory"
+                      }
+                    },
+                    "src": "460:46:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TestF_$399_storage",
+                      "typeString": "struct TestC.TestF storage ref"
+                    }
+                  },
+                  "id": 423,
+                  "nodeType": "ExpressionStatement",
+                  "src": "460:46:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createTest",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 409,
+                  "name": "_testf",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 425,
+                  "src": "329:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 408,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "328:22:3"
+            },
+            "returnParameters": {
+              "id": 411,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "358:0:3"
+            },
+            "scope": 426,
+            "src": "309:205:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 427,
+        "src": "27:490:3"
+      }
+    ],
+    "src": "0:517:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x4F8e9278648d86698D06c45Abe0CDb8871971eBD",
+      "transactionHash": "0xd9d9347f0f5b828f991eacff0b00cef09435d7214aa6ab6e43c18efee055a570"
+    }
+  },
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2022-07-23T14:35:37.850Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

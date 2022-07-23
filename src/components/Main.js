@@ -8,26 +8,26 @@ class Main extends Component {
         <h1>Add Message</h1>
         <form onSubmit={(event) => {
           event.preventDefault()
-          const name = this.productName.value
-          const price = window.web3.utils.toWei(this.productPrice.value.toString(), 'Ether')
-          this.props.createProduct(name, price)
+          const name = this.messageText.value
+          const likes = this.messageLikes.value
+          this.props.createMessage(name, likes)
         }}>
           <div className="form-group mr-sm-2">
             <input
-              id="productName"
+              id="messageText"
               type="text"
-              ref={(input) => { this.productName = input }}
+              ref={(input) => { this.messageText = input }}
               className="form-control"
               placeholder="Message"
               required />
           </div>
           <div className="form-group mr-sm-2">
             <input
-              id="productPrice"
+              id="messageLikes"
               type="text"
-              ref={(input) => { this.productPrice = input }}
+              ref={(input) => { this.messageLikes = input }}
               className="form-control"
-              placeholder="Price"
+              placeholder="Likes"
               required />
           </div>
           <button type="submit" className="btn btn-primary">Add Message</button>
@@ -39,32 +39,27 @@ class Main extends Component {
             <tr>
               <th scope="col">#</th>
               <th scope="col">Message</th>
-              <th scope="col">Price</th>
-              <th scope="col">Liker</th>
+              <th scope="col">Likes</th>
               <th scope="col"></th>
             </tr>
           </thead>
-          <tbody id="productList">
-            { this.props.products.map((product, key) => {
+          <tbody id="messageList">
+            { this.props.messages.map((message, key) => {
               return(
                 <tr key={key}>
-                  <th scope="row">{product.id.toString()}</th>
-                  <td>{product.name}</td>
-                  <td>{window.web3.utils.fromWei(product.price.toString(), 'Ether')} Eth</td>
-                  <td>{product.owner}</td>
+                  <th scope="row">{message.id.toString()}</th>
+                  <td>{message.message}</td>
+                  <td>{message.likes.toString()} Likes</td>
                   <td>
-                    { !product.purchased
-                      ? <button
-                          name={product.id}
-                          value={product.price}
-                          onClick={(event) => {
-                            this.props.purchaseProduct(event.target.name, event.target.value)
-                          }}
-                        >
-                          Buy
-                        </button>
-                      : null
-                    }
+                     <button
+                        name={message.id.toString()}
+                        value={(message.likes +1).toString()}
+                        onClick={(event) => {
+                          this.props.likeMessage(event.target.name, event.target.value)
+                        }}
+                      >
+                        Like
+                      </button>
                     </td>
                 </tr>
               )

@@ -42,13 +42,8 @@ contract Chat {
 
     function likeMessage(uint _id) public payable {
         Message memory _Message = messages[_id];
-        require(_Message.id > 0 && _Message.id <= messageCount);
-        require(msg.value >= _Message.likes);
-        // Require that the buyer is not the seller
         _Message.likes++;
-        // Update the Message
         messages[_id] = _Message;
-        // Pay the seller by sending them Ether
-        emit MessageLiked(messageCount, _Message.message, _Message.likes);
+        emit MessageLiked(_id, _Message.message, _Message.likes);
     }
 }

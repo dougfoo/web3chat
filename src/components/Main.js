@@ -33,7 +33,7 @@ class Main extends Component {
           <button type="submit" className="btn btn-primary">Add Message</button>
         </form>
         <p>&nbsp;</p>
-        <h2>Like Message</h2>
+        <h2>Chat Messages</h2>
         <table className="table">
           <thead>
             <tr>

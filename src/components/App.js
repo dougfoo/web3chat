@@ -88,7 +88,7 @@ class App extends Component {
   createMessage(name, likes) {
     this.setState({ loading: true })
     this.state.chat.methods.createMessage(name, likes).send({ from: this.state.account })
-    .on('confirmation', (receipt) => {
+    .once('confirmation', (receipt) => {
 //      this.setState({ loading: false })
       window.location.reload()
     })
@@ -97,7 +97,7 @@ class App extends Component {
   likeMessage(id, likes) {
     this.setState({ loading: true })
     this.state.chat.methods.likeMessage(id).send({ from: this.state.account, value: likes })
-    .on('confirmation', (receipt) => {
+    .once('confirmation', (receipt) => {
 //      this.setState({ loading: false })
       window.location.reload()
     })

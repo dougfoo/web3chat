@@ -88,16 +88,18 @@ class App extends Component {
   createMessage(name, likes) {
     this.setState({ loading: true })
     this.state.chat.methods.createMessage(name, likes).send({ from: this.state.account })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
+    .on('confirmation', (receipt) => {
+//      this.setState({ loading: false })
+      window.location.reload()
     })
   }
 
   likeMessage(id, likes) {
     this.setState({ loading: true })
     this.state.chat.methods.likeMessage(id).send({ from: this.state.account, value: likes })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
+    .on('confirmation', (receipt) => {
+//      this.setState({ loading: false })
+      window.location.reload()
     })
   }
 
@@ -120,7 +122,7 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex">
               { this.state.metamask
-                ? <div id="loader" className="text-center"><p className="text-center">..MetaMask....</p></div>
+                ? <div id="loader" className="text-center"><p className="text-center">..MetaMask processing....</p></div>
                 : <div id="metainst" className="text-left">
                    <Card>
                     <Card.Header>Setup Step 1 - MetaMask</Card.Header>

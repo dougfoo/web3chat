@@ -9,6 +9,7 @@ contract Chat {
         uint id;
         string message;
         uint likes;
+        address owner;
     }
 
     event MessageCreated(
@@ -35,7 +36,7 @@ contract Chat {
         // Increment Message count
         messageCount ++;
         // Create the Message
-        messages[messageCount] = Message(messageCount, _message, _likes);
+        messages[messageCount] = Message(messageCount, _message, _likes, msg.sender);
         // Trigger an event
         emit MessageCreated(messageCount, _message, _likes);
     }

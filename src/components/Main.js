@@ -40,6 +40,7 @@ class Main extends Component {
               <th scope="col">#</th>
               <th scope="col">Message</th>
               <th scope="col">Likes</th>
+              <th scope="col">Creator</th>
               <th scope="col"></th>
             </tr>
           </thead>
@@ -50,6 +51,7 @@ class Main extends Component {
                   <th scope="row">{message.id.toString()}</th>
                   <td>{message.message}</td>
                   <td>{message.likes.toString()} Likes</td>
+                  <td>{message.owner}</td>
                   <td>
                      <button
                         name={message.id.toString()}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function MyVerticallyCenteredModal(props) {
+function TechStackModal(props) {
   return (
     <Modal
       {...props}
@@ -51,11 +51,65 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
+
+function Web123Modal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Brief Primer on Web X.0 History
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Web 1.0</h4>
+        <p>
+        <li>The original web - NCSA Mosaic, Netscape, IE ~ circa 1990's.</li>
+        <li>Mostly static pages with limited dynamic content (old CGI-BIN).</li>
+        </p>
+        <hr></hr>
+        <h4>Web 2.0</h4>
+        <p>
+        <li>Dynamic html thru the evolution of Javascript over the past 2 decades.</li>   
+        <li>After a long war of web frameworks, now dominated by JS tools (React, Vue, etc).</li>
+        <li>Heavy personalization focus.</li>  
+        </p>
+        <hr></hr>
+        <h4>Web 3.0</h4>
+        <p>
+        <li>More marketing than anything, coined by the Etherium camp as a way to decentralize the web using blockchain.</li>  
+        <li>In reality it is just linking the web to blockchain with Smart Contracts.</li>
+        <li>A similar idea is Decentralized Autonomous Organizations funded and run by blockchains but this is
+            just an idea.</li>
+        </p>
+        <hr></hr>
+        <h4>Web 4.0</h4>
+        <p>
+        <li>Not much synthesis yet, but most articles say it is the symbiotic web.</li>  
+        </p>
+        <hr></hr>
+        <h4>Web 5.0</h4>
+        <p>
+        <li>Coined by the Bitcoin camp (Jack Dorsey and Elon Musk) to enable Bitcoin as a more generic distributed ledger/database.</li>  
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 class Helpbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalShow: false
+      modal1Show: false,
+      modal2Show: false
     };
   }
 
@@ -71,19 +125,22 @@ class Helpbar extends Component {
           FooStack web3's Blockchain Demo 
         </a>
 
-        <Button variant="primary" onClick={() => this.setState({ modalShow: true})}>
-        About the Tech
+        <Button variant="primary" 
+                onClick={() => this.setState({ modalShow1: true})}>
+         About the Tech
         </Button>
 
-        <MyVerticallyCenteredModal
-          show={this.state.modalShow}
-          onHide={() => this.setState({ modalShow: false})}
+        <Button variant="secondary" 
+                onClick={() => this.setState({ modalShow2: true})}>
+         About Web 3.0 
+        </Button>
+
+        <TechStackModal show={this.state.modalShow1}
+          onHide={() => this.setState({ modalShow1: false})}
         />
-        <ul className="Helpbar-nav px-3">
-          <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
-            <small className="text-white"><span id="account">{this.props.account}</span></small>
-          </li>
-        </ul>
+        <Web123Modal show={this.state.modalShow2}
+          onHide={() => this.setState({ modalShow2: false})}
+        />
       </nav>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
+import { ProgressBar } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Web3 from 'web3'
 import './App.css';
@@ -63,6 +64,7 @@ class App extends Component {
         this.setState({
           messages: [...this.state.messages, message]
         })
+        this.pct = 100 * (i / messageCount)
       }
       this.setState({ loading: false})
     } else {
@@ -78,8 +80,12 @@ class App extends Component {
       messageCount: 0,
       messages: [],
       metamask: false,
-      loading: true
+      percentage: 10,
+      loading: true,
+      minting: false
     }
+
+    this.pct = 1
 
     this.createMessage = this.createMessage.bind(this)
     this.likeMessage = this.likeMessage.bind(this)
@@ -89,16 +95,15 @@ class App extends Component {
     this.setState({ loading: true })
     this.state.chat.methods.createMessage(name, likes).send({ from: this.state.account })
     .once('confirmation', (receipt) => {
-//      this.setState({ loading: false })
+      this.setState({ loading: false })
       window.location.reload()
     })
   }
 
   likeMessage(id, likes) {
-    this.setState({ loading: true })
+    this.setState({ minting: true })
     this.state.chat.methods.likeMessage(id).send({ from: this.state.account, value: likes })
     .once('confirmation', (receipt) => {
-//      this.setState({ loading: false })
       window.location.reload()
     })
   }
@@ -110,20 +115,26 @@ class App extends Component {
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex">
-              { this.state.loading
-                ? <div id="loader" className="text-center"><p className="text-center">Loading...</p></div>
-                : <Main
-                  messages={this.state.messages}
-                  createMessage={this.createMessage}
-                  likeMessage={this.likeMessage} />
+              { this.state.minting 
+                ?
+                <div className="container-fluid mt-5">
+                   <ProgressBar animated now={50} label="processing" />
+                </div>
+                :
+                <div>
+                </div>
               }
-            </main>
-          </div>
-          <div className="row">
-            <main role="main" className="col-lg-12 d-flex">
-              { this.state.metamask
-                ? <div id="loader" className="text-center"><p className="text-center">..MetaMask processing....</p></div>
-                : <div id="metainst" className="text-left">
+              { this.state.metamask && ! this.state.minting
+                ?
+                  <div className="container-fluid mt-5">
+                    <ProgressBar now={this.pct} label={`${this.pct}% loading`} />
+                  </div>
+                : 
+                  <div></div>
+              }
+              { !this.state.metamask 
+                ?
+                <div id="metainst" className="text-left">
                    <Card>
                     <Card.Header>Setup Step 1 - MetaMask</Card.Header>
                     <Card.Body>
@@ -163,9 +174,24 @@ class App extends Component {
                     </Card.Body>
                    </Card>
                   </div>
+                :
+                  <div></div>
               }
             </main>
           </div>
+          <div className="row">
+            <main role="main" className="col-lg-12 d-flex">
+              { this.state.metamask 
+                ? <Main
+                   messages={this.state.messages}
+                   createMessage={this.createMessage}
+                   likeMessage={this.likeMessage} />
+                 : 
+                 <div></div>
+              }
+            </main>
+          </div>
+ 
         </div>
       </div>
     );

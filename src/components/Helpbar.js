@@ -33,7 +33,7 @@ function TechStackModal(props) {
         <h4>Smart Contracts (SC) and Solidity</h4>
         <p>
         <li>A SC is like an IDL / Interface and is registered and deployed to ETH.</li>  
-        <li>I defined a 'Chat' contract to store messages and likes, and registered to the Ropsten Test network.</li>
+        <li>I defined a  <a href="https://github.com/dougfoo/web3chat/blob/master/src/contracts/Chat.sol" target="_blank">'Chat' contract</a> to store messages and likes, and registered to the Ropsten Test network.</li>
         <i>Note it costs ETH tokens (gas) to register contracts and write data.  Roptsten is a test net so it is free</i>.
         </p>
         <hr></hr>

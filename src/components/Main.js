@@ -40,7 +40,7 @@ class Main extends Component {
               <th scope="col">#</th>
               <th scope="col">Message</th>
               <th scope="col">Likes</th>
-              <th scope="col">Creator - <a href="https://ropsten.etherscan.io/address/0xda89820aa5f24a058351db1de4a639d4d80548ca">Contract</a></th>
+              <th scope="col">Creator - <a href="https://ropsten.etherscan.io/address/0xda89820aa5f24a058351db1de4a639d4d80548ca" target="_blank">Contract</a></th>
               <th scope="col"></th>
             </tr>
           </thead>

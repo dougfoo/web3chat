@@ -92,10 +92,9 @@ class App extends Component {
   }
 
   createMessage(name, likes) {
-    this.setState({ loading: true })
+    this.setState({ minting: true })
     this.state.chat.methods.createMessage(name, likes).send({ from: this.state.account })
     .once('confirmation', (receipt) => {
-      this.setState({ loading: false })
       window.location.reload()
     })
   }

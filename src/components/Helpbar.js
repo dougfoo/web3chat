@@ -70,31 +70,30 @@ function Web123Modal(props) {
         <p>
         <li>The original web - NCSA Mosaic, Netscape, IE ~ circa 1990's.</li>
         <li>Mostly static pages with limited dynamic content (old CGI-BIN).</li>
+        <li>2-tier and 3-tier arch with evolution of app servers.</li>
         </p>
         <hr></hr>
         <h4>Web 2.0</h4>
         <p>
-        <li>Dynamic html thru the evolution of Javascript over the past 2 decades.</li>   
-        <li>After a long war of web frameworks, now dominated by JS tools (React, Vue, etc).</li>
-        <li>Heavy personalization focus.</li>  
+        <li>Fully dynamic and personalized thru the evolution of Javascript (JS) over the past 2 decades.</li>   
+        <li>3-tier evolution of sophisticated client side JS frameworks.</li>  
         </p>
         <hr></hr>
         <h4>Web 3.0</h4>
         <p>
-        <li>More marketing than anything, coined by the Etherium camp as a way to decentralize the web using blockchain.</li>  
-        <li>In reality it is just linking the web to blockchain with Smart Contracts.</li>
-        <li>A similar idea is Decentralized Autonomous Organizations funded and run by blockchains but this is
-            just an idea.</li>
+        <li>Coined by the Etherium camp as a way to decentralize the web using blockchain.</li>  
+        <li>3-tier where database is a blockchain (holding data using Smart Contracts).</li>
+        <li><i>Related is DAO - Decentralized Autonomous Organizations funded and run by blockchain currency/voting rights.</i></li>
         </p>
         <hr></hr>
         <h4>Web 4.0</h4>
         <p>
-        <li>Not much synthesis yet, but most articles say it is the symbiotic web.</li>  
+        <li>Not much synthesis yet, but most articles say it is the symbiotic web.  <i>Science fiction?</i></li>  
         </p>
         <hr></hr>
         <h4>Web 5.0</h4>
         <p>
-        <li>Coined by the Bitcoin camp (Jack Dorsey and Elon Musk) to enable Bitcoin as a more generic distributed ledger/database.</li>  
+        <li>Coined by the Bitcoin camp (Jack Dorsey) to enable Bitcoin as a more generic distributed ledger/database.</li>  
         </p>
       </Modal.Body>
       <Modal.Footer>
